@@ -79,10 +79,11 @@ public class HelpClassDemo {
 				hlpobj.showMenu();
 
 				choice = (char) System.in.read();
+				System.out.println("Your choice is: " + choice);
 
-				do {
-					ignore = (char) System.in.read();
-				} while (ignore != '\n');
+				// do {
+				// ignore = (char) System.in.read();
+				// } while (ignore != '\n');
 			} while (!hlpobj.isValid(choice));
 
 			if (choice == 'q')
